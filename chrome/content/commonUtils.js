@@ -167,8 +167,11 @@ var PTUtils = {
       if(url && this.ptGetBoolPref("showKeyword", true)) {
         try {
           key = PlacesUtils.bookmarks.getKeywordForURI(this.uri(url));
-          tooltipKey.textContent = key;
+        } catch(e) {}
+        if(!key) try {
+          key = PlacesUtils.bookmarks.getKeywordForBookmark(itemId);
         } catch(e) { PTUtils.parseError(e); }
+        tooltipKey.textContent = key;
       }
 
       tooltipKey.hidden = tooltipKeyImg.hidden = !key;
