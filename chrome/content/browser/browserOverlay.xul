@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xul-overlay href="chrome://PTooltips/content/placesOverlay.xul"?>
+<!DOCTYPE overlay >
+<overlay id="PTBrowser" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://PTooltips/content/browser/browserUtils.js" />
+  <!-- FIXED in 3.5+: Show tooltip also over Bookmarks and History menu on Firefox 3.0 branch (BUG 237592)-->
+  <!-- FIXED in 3.6+: Change Places tooltip's name (btTooltip -> bhTooltip) on Firefox 3.0->3.5 branch (BUG 244371) -->
+  <menupopup id="goPopup" tooltip="bhTooltip"></menupopup>
+  <menupopup id="bookmarksMenuPopup" tooltip="bhTooltip"></menupopup>
+  <!-- FIXED in 3.6+: Change Places tooltip's name (btTooltip -> bhTooltip) on Firefox 3.0->3.5 branch (BUG 244371) -->
+  <window id="main-window">
+    <tooltip id="bhTooltip" insertafter="mainPopupSet"/>
+  </window>
+  <hbox id="bookmarksBarContent" tooltip="bhTooltip"/>
+</overlay>

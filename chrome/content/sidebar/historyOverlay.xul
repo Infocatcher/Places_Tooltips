@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xul-overlay href="chrome://PTooltips/content/placesOverlay.xul"?>
+<!DOCTYPE overlay >
+<overlay id="PTHistorySidebar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://PTooltips/content/sidebar/sidebarUtils.js" />
+ 	<page id="history-panel">
+    <!-- Bookmarks and history tooltip -->
+    <tooltip id="bhTooltip" insertafter="placesContext"/>
+  </page>
+</overlay>

@@ -1,0 +1,7 @@
+<!ENTITY ptO.title "Einstellungen">
+<!ENTITY ptOGLok.title "Aussehen">
+<!ENTITY ptOSFT.label "Ordner Tooltip immer anzeigen">
+<!ENTITY ptOSID.label "Beschreibung anzeigen">
+<!ENTITY ptOSVD.label "Datum des letzten Besuchs anzeigen">
+<!ENTITY ptOSIK.label "Schlüsselwort anzeigen">
+<!ENTITY ptOSIT.label "Tags anzeigen">

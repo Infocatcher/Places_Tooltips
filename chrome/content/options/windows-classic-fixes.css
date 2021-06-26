@@ -1,0 +1,24 @@
+/* Fix for bug 506569 - Firefox 3.5 */
+checkbox:-moz-system-metric(windows-classic) {
+  text-shadow: none !important;
+}
+
+checkbox:-moz-system-metric(windows-classic) > .checkbox-label-box > .checkbox-label {
+  margin-bottom: 0px !important;
+}
+
+checkbox[disabled="true"]:-moz-system-metric(windows-classic) > .checkbox-label-box > .checkbox-label {
+  margin-bottom: -2px !important;
+}
+
+radio:-moz-system-metric(windows-classic) {
+  text-shadow: none !important;
+}
+
+radio:-moz-system-metric(windows-classic) > .checkbox-label-box > .checkbox-label {
+  margin-bottom: 0px !important;
+}
+
+radio[disabled="true"]:-moz-system-metric(windows-classic) > .checkbox-label-box > .checkbox-label {
+  margin-bottom: -2px !important;
+}

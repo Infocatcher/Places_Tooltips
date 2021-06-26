@@ -1,0 +1,33 @@
+.tooltip-label { /*Fix labels' margins in Firefox 3.0*/
+	margin: 0;
+}
+.tooltip-image {
+	width: 16px;
+	height: 16px;
+}
+.tooltip-box {
+	padding: 2px 0 1px 0;
+}
+.tooltip-box[hidden="true"] {
+	padding: 0;
+}
+#bhDescImg {
+	width: 17px; /*Fix description label's image size*/
+	margin-left: -1px;
+}
+#bhDescImg, #chkbShowDescription {
+	list-style-image: url("chrome://ptooltips/content/skin/images.png");
+	-moz-image-region: rect(0px 16px 16px 0px);
+}
+#bhVisitedImg, #chkbShowLastVisitDate {
+	list-style-image: url("chrome://ptooltips/content/skin/images.png");
+	-moz-image-region: rect(0px 32px 16px 16px);
+}
+#bhKeyImg, #chkbShowKeyword {
+	list-style-image: url("chrome://ptooltips/content/skin/images.png");
+	-moz-image-region: rect(0px 48px 16px 32px);
+}
+#bhTagsImg, #chkbShowTags {
+	list-style-image: url("chrome://ptooltips/content/skin/images.png");
+	-moz-image-region: rect(0px 64px 16px 48px);
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="../skin/style.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % PTooltipsDTD SYSTEM "chrome://PTooltips/locale/ptLangFile.dtd">
+%PTooltipsDTD;
+]>
+
+<prefwindow id="cust.ptopt"	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&ptO.title;">
+  <prefpane id="panePTopt">
+    <preferences id="ptoptPreferences">
+      <!--preference id="alwaysFoldersTooltip"      name="placestooltips.userprefs.alwaysFoldersTooltip"      type="bool"/-->
+      <preference id="showDescription"           name="placestooltips.userprefs.showDescription"           type="bool"/>
+      <preference id="showLastVisitDate"         name="placestooltips.userprefs.showLastVisitDate"         type="bool"/>
+      <preference id="showKeyword"               name="placestooltips.userprefs.showKeyword"               type="bool"/>
+      <preference id="showTags"                  name="placestooltips.userprefs.showTags"                  type="bool"/>      
+    </preferences>
+    <groupbox id="myPrefsBox">
+      <caption label="&ptOGLok.title;"/>
+      <!--checkbox label="&ptOSFT.label;" preference="alwaysFoldersTooltip"/-->
+      <checkbox id ="chkbShowDescription" label="&ptOSID.label;" preference="showDescription"/>
+      <checkbox id ="chkbShowLastVisitDate" label="&ptOSVD.label;" preference="showLastVisitDate"/>
+      <checkbox id ="chkbShowKeyword" label="&ptOSIK.label;" preference="showKeyword"/>
+      <checkbox id ="chkbShowTags" label="&ptOSIT.label;" preference="showTags"/>
+    </groupbox>
+  </prefpane>
+</prefwindow>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="skin/style.css" type="text/css"?>
+<!DOCTYPE overlay >
+<overlay id="PTPlaces" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <!-- Bookmarks and history tooltip -->
+  <script type="application/x-javascript" src="chrome://PTooltips/content/commonUtils.js" />
+  <tooltip id="bhTooltip" noautohide="true" onpopupshowing="return PTUtils.fillInBHTooltip(document, event)">
+    <vbox id="bhTooltipTextBox" flex="1">
+      <label id="bhTitleText" class="tooltip-label"/>
+      <label id="bhUrlText" class="tooltip-label" crop="center"/>
+      <box id="bhBox1" class="tooltip-box">
+        <vbox><image id="bhDescImg" class="tooltip-image"/></vbox>
+        <vbox flex="1"><label id="bhDesc"/></vbox>
+      </box>
+      <box id="bhBox2" class="tooltip-box">
+        <image id="bhVisitedImg" class="tooltip-image"/><label id="bhVisited"/>
+        <image id="bhKeyImg" class="tooltip-image"/><label id="bhKey"/>
+        <image id="bhTagsImg" class="tooltip-image"/><label id="bhTags"/>
+      </box>
+    </vbox>
+  </tooltip>
+</overlay>

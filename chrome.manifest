@@ -1,0 +1,29 @@
+content PTooltips chrome/content/
+
+# Firefox
+overlay	chrome://browser/content/browser.xul chrome://PTooltips/content/browser/browserOverlay.xul
+# FIXED in 3.6+: Tooltips don't work in the sidebar on Firefox 3.0->3.5 branch (BUG 259199)
+overlay	chrome://browser/content/web-panels.xul chrome://PTooltips/content/sidebar/webOverlay.xul appversion<3.6a1
+# FIXED in 3.6b1+: Show a tooltip in Bookmarks and History sidebars on Firefox 3.0->3.5 branch (BUG 244371)
+# And add the new tooltip (with description, date, tags...)
+overlay	chrome://browser/content/bookmarks/bookmarksPanel.xul chrome://PTooltips/content/sidebar/bookmarksOverlay.xul
+overlay	chrome://browser/content/history/history-panel.xul chrome://PTooltips/content/sidebar/historyOverlay.xul
+
+# Locales
+locale PTooltips it-IT chrome/locale/it-IT/
+locale PTooltips en-US chrome/locale/en-US/
+locale PTooltips de-DE chrome/locale/de-DE/
+locale PTooltips pl-PL chrome/locale/pl-PL/
+locale PTooltips pt-BR chrome/locale/pt-BR/
+locale PTooltips zh-CN chrome/locale/pt-PT/
+locale PTooltips ru-RU chrome/locale/ru-RU/
+locale PTooltips zh-CN chrome/locale/sr/
+locale PTooltips zh-CN chrome/locale/sv-SE/
+locale PTooltips zh-CN chrome/locale/uk-UA/
+locale PTooltips zh-CN chrome/locale/zh-CN/
+
+# Use different default icons in Aero
+override chrome://ptooltips/content/skin/images.png chrome://ptooltips/content/skin/images-aero.png os=WINNT osversion>=6
+
+# FIXED in 3.6+: Fixes the options dialog under systems running Microsoft Windows and classic theme on Firefox 3.5 branch (BUG 506569)
+style chrome://PTooltips/content/options/options.xul chrome://PTooltips/content/options/windows-classic-fixes.css os=WINNT appversion>=3.1b2 appversion<3.6a1

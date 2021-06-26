@@ -1,0 +1,7 @@
+<!ENTITY ptO.title "Places’ Tooltips - Settings">
+<!ENTITY ptOGLok.title "Look">
+<!ENTITY ptOSFT.label "Show always folders’ tooltip">
+<!ENTITY ptOSID.label "Show the description">
+<!ENTITY ptOSVD.label "Show the last visit date">
+<!ENTITY ptOSIK.label "Show the keyword">
+<!ENTITY ptOSIT.label "Show the tags">

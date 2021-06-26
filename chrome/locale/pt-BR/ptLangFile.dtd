@@ -1,0 +1,7 @@
+<!ENTITY ptO.title "Places’ Tooltips - Opções">
+<!ENTITY ptOGLok.title "Visualização">
+<!ENTITY ptOSFT.label "Mostrar sempre dica de contexto de pastas">
+<!ENTITY ptOSID.label "Exibir descrição">
+<!ENTITY ptOSVD.label "Exibir data da última visita">
+<!ENTITY ptOSIK.label "Exibir palavra-chave">
+<!ENTITY ptOSIT.label "Exibir marcadores (tags)">

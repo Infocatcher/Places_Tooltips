@@ -1,0 +1,7 @@
+<!ENTITY ptO.title "Places’ Tooltips - Impostazioni">
+<!ENTITY ptOGLok.title "Aspetto">
+<!ENTITY ptOSFT.label "Mostra sempre i tooltip sulle cartelle">
+<!ENTITY ptOSID.label "Mostra la descrizione">
+<!ENTITY ptOSVD.label "Mostra la data dell'ultima visita">
+<!ENTITY ptOSIK.label "Mostra la parole chiave">
+<!ENTITY ptOSIT.label "Mostra le etichette">
