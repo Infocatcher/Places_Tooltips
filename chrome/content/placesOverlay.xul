@@ -12,7 +12,7 @@
         <vbox><image id="bhDescImg" class="tooltip-image"/></vbox>
         <vbox flex="1"><label id="bhDesc"/></vbox>
       </box>
-      <box id="bhBox2" class="tooltip-box">
+      <box id="bhBox2" class="tooltip-box" align="center">
         <image id="bhVisitedImg" class="tooltip-image"/><label id="bhVisited"/>
         <image id="bhKeyImg" class="tooltip-image"/><label id="bhKey"/>
         <image id="bhTagsImg" class="tooltip-image"/><label id="bhTags"/>
