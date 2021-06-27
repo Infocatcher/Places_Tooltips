@@ -1,9 +1,9 @@
-let Cc = Components.classes;
-let Ci = Components.interfaces;
-let Cu = Components.utils;
+//let Cc = Components.classes;
+//let Ci = Components.interfaces;
+//let Cu = Components.utils;
 
 var PTUtils = {
-  debug: true,
+  debug: false,
 
   get nativeJSON() {
     delete this.nativeJSON;
