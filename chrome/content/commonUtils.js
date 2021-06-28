@@ -108,8 +108,13 @@ var PTUtils = {
 
       var tooltipUrl = document.getElementById("bhUrlText");
       tooltipUrl.hidden = !url;
-      if(!tooltipUrl.hidden)
-        tooltipUrl.value = url;
+      if(!tooltipUrl.hidden) {
+        var decoded;
+        try {
+          decoded = parent.losslessDecodeURI(this.uri(url));
+        } catch(e) {}
+        tooltipUrl.value = decoded || url;
+      }
 
       /************************************************************************/
       //Description
