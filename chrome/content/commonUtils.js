@@ -111,7 +111,10 @@ var PTUtils = {
       if(!tooltipUrl.hidden) {
         var decoded;
         try {
-          decoded = parent.losslessDecodeURI(this.uri(url));
+          if(/^javascript:/i.test(url))
+            decoded = decodeURI(url);
+          else
+            decoded = parent.losslessDecodeURI(this.uri(url));
         } catch(e) {}
         tooltipUrl.value = decoded || url;
       }
