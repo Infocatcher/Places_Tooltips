@@ -188,19 +188,15 @@ var PTUtils = {
       //Tags
       var tooltipTagsImg = document.getElementById("bhTagsImg");
       var tooltipTags = document.getElementById("bhTags");
-      var tags = new Array();
+      var tags, tTags;
 
       if(url && this.ptGetBoolPref("showTags", false)) {
         tags = PlacesUtils.tagging.getTagsForURI(this.uri(url), {});
-        var tTags = "";
-        for(var i = 0; i < tags.length; i++)
-          tTags += tags[i] + ", ";
-        tTags = tTags.substring(0, tTags.length - 2);
-
+        tTags = tags.join(", ");
         tooltipTags.textContent = tTags; 
       }
 
-      tooltipTags.hidden = tooltipTagsImg.hidden = !tags[0];
+      tooltipTags.hidden = tooltipTagsImg.hidden = !tTags;
 
       /************************************************************************/
       //Hide Boxes if necessary
