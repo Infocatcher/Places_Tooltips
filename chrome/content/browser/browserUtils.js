@@ -1,6 +1,7 @@
 window.addEventListener("load", initPTBrowser, false);
 
 function initPTBrowser() {
+  window.removeEventListener("load", initPTBrowser, false);
   // FIXED in 3.5b2+: Show tooltip also over "other Bookmarks" on bookmarks toolbar on Firefox 3.0 branch (BUG 237592)
   if (PTUtils.versionChecker.compare(PTUtils.appInfo.version, "3.1b2") < 0) {
     var bookmarksToolbar = document.getElementById("bookmarksBarContent");
