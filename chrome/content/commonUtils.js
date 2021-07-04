@@ -129,7 +129,7 @@ var PTUtils = {
         try {
 		      descr = PlacesUIUtils.getItemDescription(itemId);
           tooltipDesc.textContent = descr;
-        } catch(e) { cdmUtils.parseError(e); }
+        } catch(e) { PTUtils.parseError(e); }
       }
 
       tooltipDesc.hidden = tooltipDescImg.hidden = !descr;
