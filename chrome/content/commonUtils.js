@@ -176,7 +176,7 @@ var PTUtils = {
         try {
           key = PlacesUtils.bookmarks.getKeywordForURI(this.uri(url));
         } catch(e) {}
-        if(!key) try {
+        if(!key && itemId >= 0) try {
           key = PlacesUtils.bookmarks.getKeywordForBookmark(itemId);
         } catch(e) { PTUtils.parseError(e); }
         tooltipKey.textContent = key;
