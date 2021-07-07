@@ -72,7 +72,7 @@ var PTUtils = {
         if (tooltipNode._placesNode) // Firefox 4.0+
           node = tooltipNode._placesNode;
         else if (tooltipNode.node) // For Firefox 3.0 -> 3.6 compatibility
-          node = tooltipNode.node;        	
+          node = tooltipNode.node;
         else
           // This is a static non-Places node.
           targetURI = tooltipNode.getAttribute("targetURI");
@@ -127,7 +127,7 @@ var PTUtils = {
 
       if(annotation) {
         try {
-		      descr = PlacesUIUtils.getItemDescription(itemId);
+          descr = PlacesUIUtils.getItemDescription(itemId);
           tooltipDesc.textContent = descr;
         } catch(e) { PTUtils.parseError(e); }
       }
@@ -193,7 +193,7 @@ var PTUtils = {
       if(url && this.ptGetBoolPref("showTags", false)) {
         tags = PlacesUtils.tagging.getTagsForURI(this.uri(url), {});
         tTags = tags.join(", ");
-        tooltipTags.textContent = tTags; 
+        tooltipTags.textContent = tTags;
       }
 
       tooltipTags.hidden = tooltipTagsImg.hidden = !tTags;
@@ -209,7 +209,7 @@ var PTUtils = {
       // Show tooltip
       return true;
     } catch(e) { PTUtils.parseError(e); }
-	},//fillInBHTooltip
+  },//fillInBHTooltip
 
   fixOpenURI: function(aEvent) {
     try {
@@ -250,7 +250,7 @@ var PTUtils = {
       // enable menu
       undoPopup.parentNode.removeAttribute("disabled");
 
-      // populate menu  
+      // populate menu
       let undoItems = PTUtils.nativeJSON.decode(this._ss.getClosedTabData(window));
       for (var i = 0; i < undoItems.length; i++) {
         var m = document.createElement("menuitem");
@@ -329,7 +329,7 @@ var PTUtils = {
       // enable menu
       undoPopup.parentNode.removeAttribute("disabled");
 
-      // populate menu  
+      // populate menu
       let undoItems = PTUtils.nativeJSON.decode(this._ss.getClosedWindowData());
       for (let i = 0; i < undoItems.length; i++) {
         let undoItem = undoItems[i];
@@ -407,4 +407,4 @@ var PTUtils = {
     var iosvc = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
     return iosvc.newURI(spec, null, null);
   }
-};//PTUtils  
+};//PTUtils
