@@ -6,7 +6,8 @@
 `*` – improved<br>
 
 ##### master/HEAD
-`x` Fixed keywords in modern Firefox versions.<br>
+##### 3.0.20210714
+`x` Fixed keywords in modern Firefox/Basilisk versions.<br>
 `x` Fixed icons stretching.<br>
 `*` Show human-readable decoded URIs without %XX codes.<br>
 `+` Marked compatible with Pale Moon.<br>

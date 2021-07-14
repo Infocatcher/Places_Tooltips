@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
 
     <em:id>{46136bce-f897-43d4-b3df-5e51562f4923}</em:id>
-    <em:version>3.0.20110409</em:version>
+    <em:version>3.0.20210714</em:version>
 
     <em:type>2</em:type>
     <em:name>Places’ Tooltips</em:name>
